@@ -24,7 +24,7 @@ function createBook(book) {
 }
 
 function populateOriginalBookList(books) {
-  booksArray.forEach((book) => {
+  books.forEach((book) => {
     const bItem = createBook(book);
     bookList.append(bItem);
   });
@@ -38,8 +38,6 @@ function displayOneBook(book) {
 window.addEventListener('load', () => {
   if (booksArray) {
     populateOriginalBookList(booksArray);
-  } else {
-
   }
 });
 
