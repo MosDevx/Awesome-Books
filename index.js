@@ -1,6 +1,10 @@
 const bookList = document.getElementById('book-list');
+const newBookForm = document.getElementById('new-book-form')
+const inputTitle = document.getElementById('input-title')
+const inputAuthor = document.getElementById('input-author')
+const successSmall = document.getElementById('success-small')
 
-const booksArray = [];
+const booksArray = [{title:'asdad',author: 'asda'}, {title:'asdad',author: 'asda'}];
 
 function Book (title,author) {
     this.title = title;
@@ -19,12 +23,43 @@ function createBook (book){
     return mainDiv;
 }
 
-function populateBookList (books){
+function populateOriginalBookList (books){
     booksArray.forEach(book => {
         let bItem = createBook(book);
         bookList.append(bItem);
     });
 }
 
-bookList.append(book);
+function displayOneBook(book){
+	let bItem = createBook(book)
+	bookList.append(bItem)
+}
+
+window.addEventListener('load',()=>{
+	if (booksArray){
+		populateOriginalBookList(booksArray)
+	}else{
+		return
+	}
+})
+
+
+newBookForm.addEventListener('submit',(e)=>{
+	e.preventDefault();
+	let title = inputTitle.value
+	let author = inputAuthor.value
+
+	let newBook = new Book(title,author);
+	booksArray.push(newBook)
+	displayOneBook(newBook)
+	console.log(booksArray)
+	successSmall.style.display='block'
+	
+	setTimeout(()=>{
+		successSmall.style.display='none';
+	},2000)
+	
+	newBookForm.reset();
+})
+
 
