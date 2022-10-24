@@ -25,7 +25,7 @@ function createBook (book){
 
 function populateOriginalBookList (books){
     booksArray.forEach(book => {
-        let bItem = createBook(book);
+        let bItem = createBook(book);git 
         bookList.append(bItem);
     });
 }
