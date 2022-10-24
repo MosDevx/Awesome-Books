@@ -41,8 +41,10 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@moseswamae7](https://twitter.com/moseswamae7)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/moses-wamae-a13a67244)
 
-👤 **Author1**
+👤 **Author2**
 
+- GitHub: [@jonathanmunamire](https://github.com/jonathanmunamire)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jonathan-munamire-350599225/)
 
 ## 🤝 Contributing
 
