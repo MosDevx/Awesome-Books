@@ -4,6 +4,43 @@ const inputTitle = document.getElementById('input-title');
 const inputAuthor = document.getElementById('input-author');
 const successSmall = document.getElementById('success-small');
 
+// we have  a class Book
+// an static array to contain all the instances
+// method add elements to the array,
+// delete element  from the array
+// method  to return array
+
+class Book1 {
+  static booksArray = []
+
+  static count = 0
+
+  // static getId(){
+  //   return Date.now()
+  // }
+  constructor(title, author) {
+    Book1.count += 1;
+    this.id = Book1.count;
+    this.title = title;
+    this.author = author;
+
+    Book1.booksArray.push(this);
+  }
+
+  deleteBook() {
+    const i = Book1.booksArray.indexOf(this);
+    Book1.booksArray.splice(i, 1);
+  }
+
+  static printBooks() {
+    console.log(Book1.booksArray);
+  }
+
+  static getAllBooksArray() {
+    return Book1.booksArray;
+  }
+}
+
 let booksArray = [];
 
 function Book(title, author) {
