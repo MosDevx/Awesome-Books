@@ -13,7 +13,22 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		
+		<section>
+			<h2>Awesome Books</h2>
+			<section id="book-list">
+
+			</section>
+			<hr/>
+			
+			<form id='new-book-form' action="">
+				<input  data-any = "something" id="input-title" type="text" required placeholder="Title"/><br>
+				<input id="input-author" type="text" required pattern="[a-zA-Z]+" placeholder="Author"/><br>
+				<small id="success-small" style="display:none" >Book Added!</small>
+				<button type="submit" >Add</button>
+			</form>
 	
+		</section>
 		
 		<script src="index.js" defer></script>
 	</body>
