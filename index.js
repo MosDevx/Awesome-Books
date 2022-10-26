@@ -47,20 +47,22 @@ let booksArray = [];
 // }
 
 function createBook(book) {
-  const mainDiv = document.createElement('div');
-  const pTitle = document.createElement('p');
-  const pAuthor = document.createElement('p');
+  const mainTr = document.createElement('tr');
+  const pTitle = document.createElement('td');
+  const pAuthor = document.createElement('td');
+  const tdButton = document.createElement('td')
   const button = document.createElement('button');
   pTitle.textContent = book.title;
   pAuthor.textContent = book.author;
   button.textContent = 'delete';
   button.addEventListener('click', () => {
-    const parent = button.parentNode;
+    const parent = tdButton.parentNode;
     bookList.removeChild(parent);
     book.deleteBook();
   });
-  mainDiv.append(pTitle, pAuthor, button);
-  return mainDiv;
+  tdButton.appendChild(button)
+  mainTr.append(pTitle, pAuthor, tdButton);
+  return mainTr;
 }
 
 function populateOriginalBookList(books) {
