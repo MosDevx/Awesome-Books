@@ -26,13 +26,17 @@ class Book {
     this.author = author;
 
     Book.booksArray.push(this);
-    Book.storageUpdater();
+    if (typeof Book.storageUpdater === 'function') {
+      Book.storageUpdater();
+    }
   }
 
   deleteBook() {
     const i = Book.booksArray.indexOf(this);
     Book.booksArray.splice(i, 1);
-    Book.storageUpdater();
+    if (typeof Book.storageUpdater === 'function') {
+      Book.storageUpdater();
+    }
   }
 
   static getAllBooksArray() {
