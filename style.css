@@ -75,7 +75,6 @@ h6 {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 #awesome {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -91,10 +90,11 @@ h6 {
   border-collapse: collapse;
 }
 
-#book-list tr:nth-child(even){
- background-color: rgb(255, 255, 255);
+#book-list tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
 }
-#book-list tr:nth-child(odd){
+
+#book-list tr:nth-child(odd) {
   background-color: rgb(221, 221, 221);
 }
 
@@ -111,7 +111,7 @@ h6 {
 }
 
 button {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .line1 {

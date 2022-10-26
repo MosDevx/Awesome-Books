@@ -24,8 +24,8 @@
 			
 			<form id='new-book-form' action="">
 				<h2 class="form-title">Add a new Book</h2>
-				<input  data-any = "something" id="input-title" type="text" required placeholder="Title"/><br>
-				<input id="input-author" type="text" required pattern="[a-zA-Z]+" placeholder="Author"/><br>
+				<input  data-any = "something" id="input-title" autocomplete="off" type="text" required placeholder="Title"/><br>
+				<input id="input-author" type="text" required autocomplete="off" pattern="[a-zA-Z]+" placeholder="Author"/><br>
 				<small id="success-small" style="display:none" >Book Added!</small>
 				<button id="add-button" type="submit" >Add</button>
 			</form>
