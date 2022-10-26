@@ -14,18 +14,20 @@
 	</head>
 	<body>
 		
-		<section>
-			<h2>Awesome Books</h2>
-			<section id="book-list">
+		<section id="awesome" >
+			<h2>All Awesome Books</h2>
+			<table id="book-list">
 
-			</section>
-			<hr/>
+			</table>
+
+			<hr class="line1"/>
 			
 			<form id='new-book-form' action="">
-				<input  data-any = "something" id="input-title" type="text" required placeholder="Title"/><br>
-				<input id="input-author" type="text" required pattern="[a-zA-Z]+" placeholder="Author"/><br>
+				<h2 class="form-title">Add a new Book</h2>
+				<input  data-any = "something" id="input-title" autocomplete="off" type="text" required placeholder="Title"/><br>
+				<input id="input-author" type="text" required autocomplete="off" pattern="[a-zA-Z]+" placeholder="Author"/><br>
 				<small id="success-small" style="display:none" >Book Added!</small>
-				<button type="submit" >Add</button>
+				<button id="add-button" type="submit" >Add</button>
 			</form>
 	
 		</section>

@@ -71,3 +71,68 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+#awesome {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 40%;
+  padding: 0% 20% 0% 20%;
+}
+
+#book-list {
+  border: 3px solid black;
+  width: 70%;
+  border-collapse: collapse;
+}
+
+#book-list tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+#book-list tr:nth-child(odd) {
+  background-color: rgb(221, 221, 221);
+}
+
+#book-list td:nth-child(3) {
+  text-align: end;
+}
+
+#input-title {
+  border: 3px solid black;
+}
+
+#input-author {
+  border: 3px solid black;
+}
+
+button {
+  background-color: #fff;
+}
+
+.line1 {
+  width: 15%;
+  height: 1%;
+  background-color: black;
+  margin-top: 3%;
+}
+
+.form-title {
+  margin-left: 20%;
+}
+
+#new-book-form {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 35%;
+}
+
+#add-button {
+  margin-left: 80%;
+  box-shadow: 3px 3px black;
+}
