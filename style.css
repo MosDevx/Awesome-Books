@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -25,6 +27,7 @@ body {
   5. Improve text rendering
 */
 body {
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -70,12 +73,6 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 #navbar {
@@ -194,7 +191,7 @@ body {
   padding: 2% 2% 2% 2%;
 }
 
-#contact-page{
+#contact-page {
   width: 100%;
   padding-top: 10%;
   height: 100vh;
@@ -212,7 +209,6 @@ body {
   padding-bottom: 2%;
   font-size: 20px;
   font-weight: 600;
-  
 }
 
 #contact-page ul {
@@ -233,5 +229,5 @@ body {
 }
 
 .hide {
-  display: none
+  display: none;
 }
