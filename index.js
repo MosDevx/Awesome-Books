@@ -118,3 +118,41 @@ newBookForm.addEventListener('submit', (event) => {
 
   newBookForm.reset();
 });
+
+////////////////////////////////////////Navigation//////////////////////////
+
+const navigation = document.getElementById('navbar');
+
+const bookLink = document.getElementById('book-link');
+const formLink = document.getElementById('form-link');
+const contactLink = document.getElementById('contact-link');
+
+const bookPage = document.getElementById('book-page');
+const formPage = document.getElementById('form-page');
+const contactPage = document.getElementById('contact-page');
+
+bookLink.addEventListener('click', () => {
+  formPage.classList.add('hide');
+  contactPage.classList.add('hide');
+  bookPage.classList.remove('hide');
+})
+
+formLink.addEventListener('click', () => {
+  formPage.classList.remove('hide');
+  contactPage.classList.add('hide');
+  bookPage.classList.add('hide');
+})
+
+contactLink.addEventListener('click', () => {
+  formPage.classList.add('hide');
+  contactPage.classList.remove('hide');
+  bookPage.classList.add('hide');
+})
+
+window.addEventListener('hashchange', () => {
+  console.log(location.hash);
+}, false);
+
+
+
+
