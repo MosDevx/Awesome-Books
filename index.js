@@ -144,7 +144,9 @@ function showContactPage() {
 }
 
 window.addEventListener('hashchange', () => {
-  const { hash } = window.location;
+  const {
+    hash
+  } = window.location;
   if (hash === '#book-page') {
     showBookPage();
   } else if (hash === '#form-page') {
