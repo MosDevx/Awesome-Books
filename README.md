@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Awesome Books
-
+A Single Page App that allow users to create read and update a List of Books. Built with JavaScript
 > Project to Display List of Books
 
 
